@@ -1,0 +1,106 @@
+/*
+-[ Spacing (px) ]-
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+-[ Font Sizing (px) ]-
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    font-family: "Exo 2", Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-size: 62.5%;
+
+    font-size: 1rem;
+}
+
+#how-to-play-accordion {
+    margin: 4.8rem 20%;
+}
+
+/* General */
+/* -=-=-=-=-=-=-=-=-=-=- */
+/* Helper Classes */
+
+/* Helper Classes */
+/* -=-=-=-=-=-=-=-=-=-=- */
+/* Launch Preparation */
+
+#launch-preparation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#launch-preparation input[type=range] {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1.2rem;
+    width: 25%;
+}
+
+#fuel-input {
+    width: 90% !important;
+}
+
+#cost-display {
+    background-color: #005000;
+}
+
+#budget-display {
+    background-color: #0e800e;
+}
+
+#weight-display {
+    background-color: #474747;
+}
+
+#cost-display, #budget-display, #weight-display {
+    font-family: "Space Mono", 'Courier New', Courier, monospace;
+    margin: 0.8rem 25%;
+    border-radius: 10px;
+    color: whitesmoke;
+    font-size: 1.6rem;
+
+    transition: color 0.3s;
+}
+
+#launch-preparation-feedback {
+    background-color: black;
+    color: whitesmoke;
+    margin: 0.4rem 25%;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 0.6rem 1.2rem;
+    height: 6.4rem;
+    
+    transition: color 0.5s;
+}
+
+/* Launch Button */
+#launchBtn {
+    margin: 0 20%;
+    border: 7px ridge black;
+    border-radius: 15px;
+    background-color: #6d6d6d;
+    color: whitesmoke;
+    font-size: 2.4rem;
+
+    transition: border 0.1s, background-color 0.1s, color 0.1s;
+}
+
+#launchBtn:hover {
+    border: 7px ridge #333;
+    background-color: #4d4d4d;
+    color: #c7c6c6;
+}
+
+#launchBtn:active {
+    border: 7px ridge rgb(202, 202, 202);
+    background-color: #bebebe;
+}
